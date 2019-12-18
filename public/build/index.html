@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Belgrano|Quicksand:300,400,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="tailwind.css" />
+
+    <title>Vinicius Bortoletto | Ilustrador</title>
+  </head>
+  <body class="font-base">
+    <header>
+      <nav
+        class="z-10 w-screen h-20 pl-5 pr-5 fixed bg-gray-200 flex justify-between items-center shadow"
+      >
+        <div class="cursor-pointer">
+          <img
+            src="/src/images/icons/logo.svg"
+            alt="logo de vinicius bortoletto"
+          />
+        </div>
+
+        <div class="cursor-pointer">
+          <img src="/src/images/icons/menu.svg" alt="" />
+        </div>
+
+        <div
+          class="hidden w-screen h-screen mt-20 pl-10 pt-12 absolute left-0 top-0 bg-gray-900"
+        >
+          <ul class="text-gray-100 font-bold text-2xl tracking-widest">
+            <li class="flex mb-5">
+              <img
+                class="mr-8 w-8"
+                src="/src/images/icons/home.svg"
+                alt="icone da home"
+              />
+              <a href="index.html">home</a>
+            </li>
+            <li class="flex mb-5">
+              <img
+                class="mr-8 w-8"
+                src="/src/images/icons/portfolio.svg"
+                alt="icone da home"
+              />
+              <a href="portfolio.html">portfolio</a>
+            </li>
+            <li class="flex mb-5">
+              <img
+                class="mr-8 w-8"
+                src="/src/images/icons/sobre.svg"
+                alt="icone da home"
+              />
+              <a href="sobre.html">sobre</a>
+            </li>
+            <li class="flex">
+              <img
+                class="mr-8 w-8"
+                src="/src/images/icons/contato.svg"
+                alt="icone da home"
+              />
+              <a href="contato.html">contato</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <body>
+      <!-- Home -->
+      <div>
+        <!-- Background Image -->
+        <div
+          class="w-full h-screen absolute bg-no-repeat bg-cover bg-gray-400"
+          style="background-image: url(/src/images/home/bg-home.jpg);background-position: 70%;"
+        ></div>
+
+        <!-- Title -->
+        <div class="h-screen flex justify-center items-center">
+          <div class="relative z-10 inline-block leading-none text-gray-100">
+            <h1 class="font-title text-5xl sm:text-6xl">
+              Vinicius <span class="block">Bortoletto</span>
+            </h1>
+            <h2 class="font-hairline text-xl text-right">ilustrador digital</h2>
+          </div>
+        </div>
+
+        <!-- Title Dots -->
+        <div class='w-full h-full absolute inset-0 flex justify-center '>
+          <img class='w-dots sm:w-9/12 max-w-xl self-center' src="/src/images/home/dots.png" alt="pontilhado">
+        </div>
+      </divc>
+    </body>
+    <footer></footer>
+  </body>
+</html>
