@@ -15,88 +15,162 @@
 
     <title>Vinicius Bortoletto | Ilustrador</title>
   </head>
-  <body class="font-base">
+  <body class="font-base bg-gray-100">
     <header>
+      <!-- Navbar -->
       <nav
-        class="z-10 w-screen h-20 pl-5 pr-5 fixed bg-gray-200 flex justify-between items-center shadow"
+        class="z-10 w-screen md:w-20 hover:w-40 h-20 md:h-screen px-5 md:py-10 fixed bg-gray-900 flex justify-between md:justify-center items-center md:items-start"
       >
-        <div class="cursor-pointer">
-          <img
-            src="/src/images/icons/logo.svg"
-            alt="logo de vinicius bortoletto"
-          />
-        </div>
+        <!-- Logo -->
+        <a href="index.html">
+          <div class="cursor-pointer">
+            <img
+              src="/src/images/icons/logo.svg"
+              alt="logo de vinicius bortoletto"
+              class="w-6"
+            />
+          </div>
+        </a>
 
-        <div class="cursor-pointer">
-          <img src="/src/images/icons/menu.svg" alt="" />
-        </div>
+        <!-- Menu -->
+        <div>
+          <!-- Menu Icon -->
+          <div
+            id="menu-btn"
+            class="cursor-pointer md:hidden h-5 flex flex-col justify-between"
+          >
+            <div class="menu-icon"></div>
+            <div class="menu-icon"></div>
+            <div class="menu-icon"></div>
+          </div>
 
-        <div
-          class="hidden w-screen h-screen mt-20 pl-10 pt-12 absolute left-0 top-0 bg-gray-900"
-        >
-          <ul class="text-gray-100 font-bold text-2xl tracking-widest">
-            <li class="flex mb-5">
-              <img
-                class="mr-8 w-8"
-                src="/src/images/icons/home.svg"
-                alt="icone da home"
-              />
-              <a href="index.html">home</a>
-            </li>
-            <li class="flex mb-5">
-              <img
-                class="mr-8 w-8"
-                src="/src/images/icons/portfolio.svg"
-                alt="icone da home"
-              />
-              <a href="portfolio.html">portfolio</a>
-            </li>
-            <li class="flex mb-5">
-              <img
-                class="mr-8 w-8"
-                src="/src/images/icons/sobre.svg"
-                alt="icone da home"
-              />
-              <a href="sobre.html">sobre</a>
-            </li>
-            <li class="flex">
-              <img
-                class="mr-8 w-8"
-                src="/src/images/icons/contato.svg"
-                alt="icone da home"
-              />
-              <a href="contato.html">contato</a>
-            </li>
-          </ul>
+          <!-- Menu Navigation -->
+          <div id="menu-bg"></div>
+          <div
+            id="menu-mobile"
+            class="hide-menuMobile w-auto md:w-20 h-screen md:flex md:justify-center md:items-center mt-20 md:mt-0 pl-10 pt-12 md:p-0 absolute left-0 top-0 bg-gray-900 md:bg-transparent shadow-menu md:shadow-none"
+          >
+            <ul
+              class="text-gray-100 font-bold text-xl tracking-widest md:flex md:flex-col md:items-center"
+            >
+              <li class="flex mb-5 md:mb-10 py-3 pr-10 md:p-0">
+                <img
+                  class="w-6 mr-8 md:mr-0"
+                  src="/src/images/icons/home.svg"
+                  alt="icone da home"
+                />
+                <a class="md:hidden" href="index.html">home</a>
+              </li>
+              <li class="flex mb-5 md:mb-10 py-3 pr-10 md:p-0">
+                <img
+                  class="w-6 mr-8 md:mr-0"
+                  src="/src/images/icons/portfolio.svg"
+                  alt="icone da home"
+                />
+                <a class="md:hidden" href="portfolio.html">portfolio</a>
+              </li>
+              <li class="flex mb-5 md:mb-10 py-3 pr-10 md:p-0">
+                <img
+                  class="w-6 mr-8 md:mr-0"
+                  src="/src/images/icons/sobre.svg"
+                  alt="icone da home"
+                />
+                <a class="md:hidden" href="sobre.html">sobre</a>
+              </li>
+              <li class="flex py-3 pr-10 md:p-0">
+                <img
+                  class="w-6 mr-8 md:mr-0"
+                  src="/src/images/icons/contato.svg"
+                  alt="icone da home"
+                />
+                <a class="md:hidden" href="contato.html">contato</a>
+              </li>
+            </ul>
+          </div>
         </div>
       </nav>
     </header>
 
-    <body>
+    <main>
       <!-- Home -->
-      <div>
-        <!-- Background Image -->
-        <div
-          class="w-full h-screen absolute bg-no-repeat bg-cover bg-gray-400"
-          style="background-image: url(/src/images/home/bg-home.jpg);background-position: 70%;"
-        ></div>
+      <section id="home" class="mb-40">
+        <div>
+          <!-- Background Image -->
+          <div
+            class="w-full h-screen absolute bg-no-repeat bg-cover bg-gray-400"
+            style="background-image: url(/src/images/home/bg-home.jpg);background-position: 70% 0;"
+          ></div>
 
-        <!-- Title -->
-        <div class="h-screen flex justify-center items-center">
-          <div class="relative z-10 inline-block leading-none text-gray-100">
-            <h1 class="font-title text-5xl sm:text-6xl">
-              Vinicius <span class="block">Bortoletto</span>
-            </h1>
-            <h2 class="font-hairline text-xl text-right">ilustrador digital</h2>
+          <!-- Title -->
+          <div class="h-screen flex justify-center items-center">
+            <div class="relative inline-block leading-none text-gray-100">
+              <h1 class="font-title text-5xl sm:text-6xl mt-10">
+                Vinicius <span class="block">Bortoletto</span>
+              </h1>
+              <h2 class="font-hairline text-xl text-right">
+                ilustrador digital
+              </h2>
+            </div>
+          </div>
+
+          <!-- Title Dots -->
+          <div class="w-full h-full absolute inset-0 flex justify-center">
+            <img
+              class="w-full max-w-md self-center mt-16"
+              src="/src/images/home/dots.png"
+              alt="pontilhado"
+            />
           </div>
         </div>
+      </section>
 
-        <!-- Title Dots -->
-        <div class='w-full h-full absolute inset-0 flex justify-center '>
-          <img class='w-dots sm:w-9/12 max-w-xl self-center' src="/src/images/home/dots.png" alt="pontilhado">
+      <!-- Portfolio -->
+      <section id="portfolio" class="mb-40 flex flex-col">
+        <!-- Background Image -->
+        <div class="section-bgImg-box">
+          <img
+            src="/src/images/svgs/bg-portfolio.svg"
+            alt="pessoa observando obras de arte"
+            class='section-bgImg'
+          />
         </div>
-      </divc>
-    </body>
+
+        <!-- Title -->
+        <div class="title-box">
+          <h1 class="title-text">
+            portfolio
+          </h1>
+          <div class="title-line w-56" ></div>
+          <div class="title-line w-40" ></div>
+        </div>
+
+        <!-- Buttons -->
+        <div class="mx-10 mb-10 flex flex-col items-center">
+          <button class="btn-sortWork">
+            todos os trabalhos
+          </button>
+          <button class="btn-sortWork">
+            série runescape
+          </button>
+          <button class="btn-sortWork">
+            série folclore
+          </button>
+        </div>
+
+        <!-- Gallery -->
+        <div>
+          <div>
+            <img
+              src="/src/images/portfolio/series-runescape/runescape-1-sm.jpg"
+              alt="lenhador carregando um tronco de árvore, caminhando pela floresta"
+            />
+          </div>
+        </div>
+      </section>
+    </main>
+
     <footer></footer>
+
+    <script src="/src/js/toggleMenu.js"></script>
   </body>
 </html>

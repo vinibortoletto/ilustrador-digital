@@ -1,3 +1,104 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* Page Transition */
+main {
+  opacity: 0;
+  animation: pageTransition 1s ease-out forwards;
+}
+@keyframes pageTransition {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Shadows */
+.shadow-menu {
+  box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.2);
+}
+.shadow-navbar {
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.5);
+}
+
+/* Toggle Menu */
+.hide-menuMobile {
+  transform: translateX(-100%);
+  opacity: 0;
+  transition: 0.2s ease-out;
+}
+.toggle-menuMobile {
+  transform: translateX(0%);
+  opacity: 1;
+}
+
+.menu-bg {
+  width: 100%;
+  height: 100vh;
+
+  position: fixed;
+  top: 5rem;
+  left: 0;
+
+  opacity: 0.7;
+  background: #1a202c;
+
+  transition: 0.2s ease-out;
+}
+
+.menu-icon {
+  width: 30px;
+  height: 4px;
+  position: relative;
+  top: 0;
+
+  border-radius: 5px;
+  background: #a0aec0;
+
+  transition: 0.2s ease-out;
+}
+.menu-icon-close:nth-child(1) {
+  top: 8px;
+  transform: rotate(45deg);
+}
+.menu-icon-close:nth-child(2) {
+  opacity: 0;
+}
+.menu-icon-close:nth-child(3) {
+  top: -8px;
+  transform: rotate(-45deg);
+}
+
+/* Section Title */
+.title-box {
+  width: 17rem;
+  @apply flex flex-col items-end mx-5 mb-10 self-center;
+}
+.title-text {
+  @apply text-6xl font-title text-teal-600 self-center;
+}
+.title-line {
+  height: 1px;
+  @apply my-1 bg-purple-600;
+}
+
+/* Section Background Image */
+.section-bgImg-box {
+  @apply mb-10 relative overflow-hidden flex justify-center;
+}
+.section-bgImg {
+  min-width: 140%;
+}
+
+/* Sort Work Button */
+.btn-sortWork {
+  @apply w-64 mb-2 p-2 border border-purple-600 text-purple-600 text-xl font-bold;
+
+  transition: 0.2s ease-out;
+}
+.btn-sortWork:hover {
+  @apply bg-purple-600 text-gray-100;
+}
