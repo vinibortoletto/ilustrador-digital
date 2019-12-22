@@ -4,12 +4,7 @@ module.exports = {
       base: ["Quicksand", "sans-serif"],
       title: ["Belgrano", "serif"]
     },
-    extend: {
-      width: {
-        dotsMobile: "320px",
-        dotsDesktop: "500px"
-      }
-    }
+    extend: {}
   },
   variants: {},
   plugins: []

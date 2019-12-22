@@ -2,103 +2,173 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Page Transition */
-main {
-  opacity: 0;
-  animation: pageTransition 1s ease-out forwards;
-}
-@keyframes pageTransition {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
+@media only screen and (min-width: 1024px) {
+  main {
+    margin-left: 5rem;
+    overflow: hidden;
+    position: relative;
   }
 }
 
-/* Shadows */
-.shadow-menu {
-  box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.2);
-}
-.shadow-navbar {
-  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.5);
+/* Transition */
+.menu-mobile,
+#menu-bg,
+.burger-line,
+#navbar-desktop,
+.btn-sortWork,
+.gallery-img-sample-bg,
+#btn-enviar,
+#galeria {
+  transition: 0.3s ease-out;
 }
 
-/* Toggle Menu */
-.hide-menuMobile {
-  transform: translateX(-100%);
-  opacity: 0;
-  transition: 0.2s ease-out;
+.menu-desktop-link {
+  transition: 0.1s ease-out;
 }
-.toggle-menuMobile {
+
+/* Toggle Menu ---------------------------------- */
+.menu-mobile {
+  transform: translateX(-200%);
+  opacity: 0;
+}
+.toggle-menu {
   transform: translateX(0%);
   opacity: 1;
 }
 
-.menu-bg {
-  width: 100%;
-  height: 100vh;
-
-  position: fixed;
-  top: 5rem;
-  left: 0;
-
-  opacity: 0.7;
-  background: #1a202c;
-
-  transition: 0.2s ease-out;
-}
-
-.menu-icon {
-  width: 30px;
+/* Burger Icon ------------------------------------ */
+.burger-line {
   height: 4px;
-  position: relative;
-  top: 0;
-
   border-radius: 5px;
-  background: #a0aec0;
-
-  transition: 0.2s ease-out;
+  @apply w-full relative inset-0 bg-gray-500;
 }
-.menu-icon-close:nth-child(1) {
-  top: 8px;
+.menu-burger-close:nth-child(1) {
+  top: 10px;
   transform: rotate(45deg);
 }
-.menu-icon-close:nth-child(2) {
+.menu-burger-close:nth-child(2) {
   opacity: 0;
 }
-.menu-icon-close:nth-child(3) {
-  top: -8px;
+.menu-burger-close:nth-child(3) {
+  top: -10px;
   transform: rotate(-45deg);
 }
 
-/* Section Title */
+/* Desktop Menu -------------------------------- */
+#navbar-desktop:hover {
+  width: 15rem;
+}
+.show-desktop-link {
+  opacity: 1;
+}
+
+/* Section Title ----------------------------------- */
 .title-box {
-  width: 17rem;
-  @apply flex flex-col items-end mx-5 mb-10 self-center;
+  @apply m-auto mb-10;
 }
 .title-text {
-  @apply text-6xl font-title text-teal-600 self-center;
+  @apply text-5xl font-title text-teal-600 self-center;
 }
 .title-line {
-  height: 1px;
-  @apply my-1 bg-purple-600;
+  height: 2px;
+  @apply my-2 bg-purple-600;
+}
+@media only screen and (min-width: 768px) {
+  .title-text {
+    font-size: 12vw;
+  }
+  .title-text-contato {
+    font-size: 9vw;
+  }
 }
 
-/* Section Background Image */
+/* Section Background Image -------------------------------- */
 .section-bgImg-box {
-  @apply mb-10 relative overflow-hidden flex justify-center;
-}
-.section-bgImg {
-  min-width: 140%;
+  @apply mb-10 flex justify-center;
 }
 
-/* Sort Work Button */
+/* Sort Work Button ------------------------------------------ */
 .btn-sortWork {
-  @apply w-64 mb-2 p-2 border border-purple-600 text-purple-600 text-xl font-bold;
-
-  transition: 0.2s ease-out;
+  @apply w-64 mb-2 p-2 border border-purple-600 rounded text-purple-600 text-xl font-bold;
 }
 .btn-sortWork:hover {
   @apply bg-purple-600 text-gray-100;
+}
+
+/* Gallery Images --------------------------------------------- */
+.gallery {
+  display: grid;
+  grid-gap: 2rem;
+}
+.gallery-img-sample {
+  @apply relative;
+}
+.gallery-img-sample img {
+  @apply rounded relative;
+}
+.gallery-img-sample-bg {
+  @apply absolute z-10 inset-0 rounded flex justify-center opacity-0 cursor-pointer;
+  background: rgba(26, 32, 44, 0.5);
+}
+.gallery-img-sample-bg:hover {
+  opacity: 1;
+}
+
+@media only screen and (min-width: 768px) {
+  .gallery {
+    grid-template-columns: 1fr 1fr;
+    margin: 0 5rem 0 5rem;
+  }
+  .gallery-img-sample:nth-child(odd) {
+    justify-self: right;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .gallery {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+  .gallery-img-sample:nth-child(odd) {
+    justify-self: auto;
+  }
+}
+
+/* Galery Open ------------------------------- */
+.galeria-img {
+  @apply fixed;
+  bottom: 10vh;
+}
+.galeria-img img {
+  @apply px-5;
+  /* height: 80vh; */
+  max-height: 70vh;
+}
+
+.galeria-texto {
+  /* @apply text-gray-100 pt-64 mr-20 flex flex-col; */
+  /* width: 20rem; */
+  @apply fixed text-gray-100 text-center leading-none;
+  bottom: 2vh;
+}
+.galeria-texto h1 {
+  @apply font-bold uppercase;
+}
+.galeria-texto h2 {
+}
+.galeria-texto h3 {
+  @apply hidden;
+}
+.galeria-texto h4 {
+  @apply hidden;
+}
+@media only screen and (min-width: 768px) {
+  .galeria-img {
+    /* left: 10vw; */
+  }
+  .galeria-texto {
+  }
+}
+
+/* Formulário --------------------------- */
+.input-field {
+  @apply w-full bg-gray-200 border border-purple-600 rounded p-4;
 }
