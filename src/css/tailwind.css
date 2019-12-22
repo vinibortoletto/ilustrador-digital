@@ -2,6 +2,19 @@
 @tailwind components;
 @tailwind utilities;
 
+html {
+  opacity: 0;
+  animation: pageTransition 0.5s ease-out forwards;
+}
+@keyframes pageTransition {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
 @media only screen and (min-width: 1024px) {
   main {
     margin-left: 5rem;
@@ -133,38 +146,70 @@
 }
 
 /* Galery Open ------------------------------- */
-.galeria-img {
-  @apply fixed;
-  bottom: 10vh;
+.galeria {
+  background: linear-gradient(
+    to bottom,
+    rgba(26, 32, 44, 0.8),
+    rgba(15, 19, 26, 0.9)
+  );
+  padding-left: 5vw;
+  padding-right: 5vw;
 }
 .galeria-img img {
-  @apply px-5;
-  /* height: 80vh; */
   max-height: 70vh;
-}
-
-.galeria-texto {
-  /* @apply text-gray-100 pt-64 mr-20 flex flex-col; */
-  /* width: 20rem; */
-  @apply fixed text-gray-100 text-center leading-none;
-  bottom: 2vh;
 }
 .galeria-texto h1 {
   @apply font-bold uppercase;
 }
-.galeria-texto h2 {
-}
-.galeria-texto h3 {
-  @apply hidden;
-}
+.galeria-texto h3,
 .galeria-texto h4 {
   @apply hidden;
 }
 @media only screen and (min-width: 768px) {
-  .galeria-img {
-    /* left: 10vw; */
+  .btn-fechar-galeria {
+    right: 5vw;
+    top: 20vh;
+    position: fixed;
+  }
+  .linhas {
+    top: 20vh;
+    right: 15vw;
   }
   .galeria-texto {
+    @apply ml-10 max-w-xs;
+  }
+  .galeria-texto h1 {
+    @apply font-title capitalize;
+    font-size: 3.5vw;
+  }
+  .galeria-texto h2 {
+    font-size: 2vw;
+  }
+  .galeria-texto h3 {
+    display: block;
+    font-size: 1.7vw;
+    @apply my-5;
+  }
+  .galeria-texto h4 {
+    display: block;
+    font-size: 1.5vw;
+    font-weight: bold;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .btn-fechar-galeria,
+  .linhas {
+    top: 10vh;
+  }
+
+  .galeria-img img {
+    max-height: 80vh;
+  }
+  .galeria-texto h3 {
+    font-size: 1rem;
+  }
+  .galeria-texto h4 {
+    font-size: 0.8rem;
   }
 }
 

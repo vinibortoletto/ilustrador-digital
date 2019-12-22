@@ -401,11 +401,10 @@
 
         <div
           id="galeria"
-          class="fixed inset-0 z-20 flex flex-col items-center"
-          style="background: linear-gradient(to bottom, rgba(26, 32, 44, .8), rgba(15, 19, 26, .9));"
+          class="hidden opacity-0 galeria fixed inset-0 z-20 flex flex-col md:flex-row items-center md:justify-center pt-24 lg:pt-0"
         >
           <!-- Close Button -->
-          <div class="fixed z-10" style="top:18vh; right: 5vw;">
+          <div class="btn-fechar-galeria w-full mb-5 flex justify-end">
             <button id="btn-fechar-galeria">
               <img
                 class="w-6"
@@ -418,9 +417,20 @@
           <!-- Imagem -->
           <div id="galeria-img" class="galeria-img"></div>
 
-          <div class="galeria-texto">
+          <!-- Texto -->
+          <div
+            class="galeria-texto text-gray-100 text-center leading-none mt-5 md:text-left md:pt-56"
+          >
             <div id="galeria-texto"></div>
             <h4>© Vinicius Bortoletto</h4>
+          </div>
+
+          <div class="linhas hidden md:block fixed">
+            <img
+              src="/src/images/portfolio/linhas.png"
+              alt="linhas"
+              style="height: 80vh;"
+            />
           </div>
         </div>
       </section>
