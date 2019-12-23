@@ -11403,6 +11403,22 @@ html {
           animation: pageTransition 0.5s ease-out forwards;
 }
 
+p::-moz-selection, h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, h4::-moz-selection, img::-moz-selection, input::-moz-selection, textarea::-moz-selection, button::-moz-selection {
+  background-color: #b794f4;
+}
+
+p::selection,
+h1::selection,
+h2::selection,
+h3::selection,
+h4::selection,
+img::selection,
+input::selection,
+textarea::selection,
+button::selection {
+  background-color: #b794f4;
+}
+
 @-webkit-keyframes pageTransition {
   from {
     opacity: 0;
@@ -11723,6 +11739,67 @@ html {
   border-color: #805ad5;
   border-radius: 0.25rem;
   padding: 1rem;
+}
+
+.form-erro p {
+  font-size: 0.75rem;
+  color: #c53030;
+  font-style: italic;
+  text-align: right;
+}
+
+/* Scroll Magic ------------------------------ */
+
+#titulo-portfolio.fade-in,
+#bg-portfolio.fade-in,
+.btn-sortWork.fade-in,
+#runescape-1.fade-in,
+#runescape-2.fade-in,
+#runescape-3.fade-in,
+#runescape-4.fade-in,
+#folclore-1.fade-in,
+#folclore-2.fade-in,
+#folclore-3.fade-in,
+#folclore-4.fade-in,
+#bg-sobre-mim.fade-in,
+#titulo-sobre-mim.fade-in,
+#descricao-sobre-mim.fade-in,
+#bg-contato.fade-in,
+#titulo-contato.fade-in,
+#nome.fade-in,
+#email.fade-in,
+#assunto.fade-in,
+#mensagem.fade-in {
+  opacity: 1;
+  -webkit-transform: translate(0);
+          transform: translate(0);
+}
+
+#titulo-portfolio,
+#bg-portfolio,
+.gallery-img-sample,
+#bg-sobre-mim,
+#titulo-sobre-mim,
+#descricao-sobre-mim,
+#bg-contato,
+#titulo-contato,
+#nome,
+#email,
+#assunto,
+#mensagem {
+  opacity: 0;
+  -webkit-transform: translateY(20%);
+          transform: translateY(20%);
+  -webkit-transition: 0.5s ease-out;
+  transition: 0.5s ease-out;
+}
+
+.btn-sortWork {
+  opacity: 0;
+  -webkit-transform: translateX(20%);
+          transform: translateX(20%);
+  -webkit-transition: 0.5s ease-out;
+  transition: 0.5s ease-out;
 }
 
 @media (min-width: 640px) {

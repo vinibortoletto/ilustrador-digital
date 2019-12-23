@@ -222,7 +222,7 @@
         style="margin-left: 5vw; margin-right: 5vw;"
       >
         <!-- Background Image -->
-        <div class="section-bgImg-box sm:justify-end">
+        <div id="bg-portfolio" class="section-bgImg-box sm:justify-end">
           <img
             src="/src/images/svgs/bg-portfolio.svg"
             alt="pessoa observando obras de arte"
@@ -231,7 +231,10 @@
         </div>
 
         <!-- Title -->
-        <div class="title-box md:-mt-32 lg:-mt-40 md:mb-20 md:m-0">
+        <div
+          id="titulo-portfolio"
+          class=" title-box md:-mt-32 lg:-mt-40 md:mb-20 md:m-0"
+        >
           <h1 class="title-text">
             portfolio
           </h1>
@@ -371,34 +374,6 @@
           </div>
         </div>
 
-        <!-- Gallery Open -->
-        <!-- <div
-          id="galeria"
-          class="hidden opacity-0 fixed inset-0 z-20 flex justify-center items-center"
-          style="background: linear-gradient(to bottom, rgba(26, 32, 44, .8), rgba(15, 19, 26, .9));"
-        >
-          <div class="fixed" style="top:10vh; right: 10vw;">
-            <button id="btn-fechar-galeria">
-              <img src="/src/images/icons/fechar.svg" alt="ícone de fechar" />
-            </button>
-          </div>
-
-          <div id="galeria-img"></div>
-
-          <div class="galeria-texto">
-            <div id="galeria-texto"></div>
-            <h4>© Vinicius Bortoletto</h4>
-          </div>
-
-          <div>
-            <img
-              src="/src/images/portfolio/linhas.png"
-              alt="linhas"
-              style="height: 80vh;"
-            />
-          </div>
-        </div> -->
-
         <div
           id="galeria"
           class="hidden opacity-0 galeria fixed inset-0 z-20 flex flex-col md:flex-row items-center md:justify-center pt-24 lg:pt-0"
@@ -442,7 +417,10 @@
         style="margin-left: 5vw; margin-right: 5vw"
       >
         <!-- Background Image -->
-        <div class="section-bgImg-box md:absolute md:justify-start">
+        <div
+          id="bg-sobre-mim"
+          class="section-bgImg-box md:absolute md:justify-start"
+        >
           <img
             src="/src/images/svgs/bg-sobre.svg"
             alt="rosto de uma pessoa"
@@ -452,6 +430,7 @@
 
         <!-- Title -->
         <div
+          id="titulo-sobre-mim"
           class="title-box flex flex-col md:mr-0 md:mb-20 text-right md:relative md:z-10"
         >
           <h1 class="title-text">
@@ -463,6 +442,7 @@
 
         <!-- Descrição -->
         <div
+          id="descricao-sobre-mim"
           class="text-justify md:relative md:z-10 md:w-3/5 self-end"
           style="text-indent: 1rem;"
         >
@@ -493,7 +473,7 @@
         style="margin-left: 5vw; margin-right: 5vw"
       >
         <!-- Background Image -->
-        <div class="section-bgImg-box">
+        <div id="bg-contato" class="section-bgImg-box">
           <img
             src="/src/images/svgs/bg-contato.svg"
             alt="pessoa observando obras de arte"
@@ -503,6 +483,7 @@
 
         <!-- Title -->
         <div
+          id="titulo-contato"
           class="title-box flex flex-col  md:mb-20 text-center md:relative md:z-10"
         >
           <h1 class="title-text title-text-contato">
@@ -522,6 +503,8 @@
               placeholder="seu nome"
               class="input-field"
             />
+
+            <div class="form-erro"><p id="nome-erro"></p></div>
           </div>
 
           <div class="mb-5">
@@ -532,6 +515,8 @@
               placeholder="seu@email.com"
               class="input-field"
             />
+
+            <div class="form-erro"><p id="email-erro"></p></div>
           </div>
 
           <div class="mb-5">
@@ -542,6 +527,8 @@
               placeholder="assunto"
               class="input-field"
             />
+
+            <div class="form-erro"><p id="assunto-erro"></p></div>
           </div>
 
           <div class="mb-5">
@@ -553,6 +540,8 @@
               rows="6"
               class="input-field resize-none"
             ></textarea>
+
+            <div class="form-erro"><p id="mensagem-erro"></p></div>
           </div>
 
           <button
@@ -586,7 +575,22 @@
     <script src="/src/js/toggleMenu.js"></script>
     <script src="/src/js/sortWork.js"></script>
     <script src="/src/js/validaForm.js"></script>
+
+    <!-- Portfolio Gallery -->
     <script src="/src/js/galeria/fecharGaleria.js"></script>
+    <script src="/src/js/galeria/abrirGaleria.js"></script>
+    <script src="/src/js/galeria/conteudoRunescape.js"></script>
+    <script src="/src/js/galeria/conteudoFolclore.js"></script>
     <script src="/src/js/galeria/conteudoGaleria.js"></script>
+
+    <!-- Scroll Magic -->
+    <script src="/src/js/jquery.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script>
+
+    <!-- <script src="/src/js/scrollMagic/home.js"></script> -->
+    <script src="/src/js/scrollMagic/portfolio.js"></script>
+    <script src="/src/js/scrollMagic/sobre.js"></script>
+    <script src="/src/js/scrollMagic/contato.js"></script>
   </body>
 </html>

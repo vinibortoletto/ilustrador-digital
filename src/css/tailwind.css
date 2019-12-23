@@ -6,6 +6,18 @@ html {
   opacity: 0;
   animation: pageTransition 0.5s ease-out forwards;
 }
+p::selection,
+h1::selection,
+h2::selection,
+h3::selection,
+h4::selection,
+img::selection,
+input::selection,
+textarea::selection,
+button::selection {
+  @apply bg-purple-400;
+}
+
 @keyframes pageTransition {
   from {
     opacity: 0;
@@ -216,4 +228,53 @@ html {
 /* Formulário --------------------------- */
 .input-field {
   @apply w-full bg-gray-200 border border-purple-600 rounded p-4;
+}
+.form-erro p {
+  @apply text-xs text-red-700 italic text-right;
+}
+
+/* Scroll Magic ------------------------------ */
+#titulo-portfolio.fade-in,
+#bg-portfolio.fade-in,
+.btn-sortWork.fade-in,
+#runescape-1.fade-in,
+#runescape-2.fade-in,
+#runescape-3.fade-in,
+#runescape-4.fade-in,
+#folclore-1.fade-in,
+#folclore-2.fade-in,
+#folclore-3.fade-in,
+#folclore-4.fade-in,
+#bg-sobre-mim.fade-in,
+#titulo-sobre-mim.fade-in,
+#descricao-sobre-mim.fade-in,
+#bg-contato.fade-in,
+#titulo-contato.fade-in,
+#nome.fade-in,
+#email.fade-in,
+#assunto.fade-in,
+#mensagem.fade-in {
+  opacity: 1;
+  transform: translate(0);
+}
+#titulo-portfolio,
+#bg-portfolio,
+.gallery-img-sample,
+#bg-sobre-mim,
+#titulo-sobre-mim,
+#descricao-sobre-mim,
+#bg-contato,
+#titulo-contato,
+#nome,
+#email,
+#assunto,
+#mensagem {
+  opacity: 0;
+  transform: translateY(20%);
+  transition: 0.5s ease-out;
+}
+.btn-sortWork {
+  opacity: 0;
+  transform: translateX(20%);
+  transition: 0.5s ease-out;
 }
