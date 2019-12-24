@@ -11456,7 +11456,8 @@ button::selection {
 .btn-sortWork,
 .gallery-img-sample-bg,
 #btn-enviar,
-#galeria {
+#gallery-full,
+#navbar-mobile {
   -webkit-transition: 0.3s ease-out;
   transition: 0.3s ease-out;
 }
@@ -11464,6 +11465,25 @@ button::selection {
 .menu-desktop-link {
   -webkit-transition: 0.1s ease-out;
   transition: 0.1s ease-out;
+}
+
+/* Home ------------------------------- */
+
+.bg-home {
+  background-image: url(/src/images/home/bg-home-sm.jpg);
+  background-position: 70% 0;
+}
+
+@media only screen and (min-width: 768px) {
+  .title-home {
+    width: 38rem;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .bg-home {
+    background-image: url(/src/images/home/bg-home-lg.jpg);
+  }
 }
 
 /* Toggle Menu ---------------------------------- */
@@ -11582,7 +11602,7 @@ button::selection {
 
 /* Gallery Images --------------------------------------------- */
 
-.gallery {
+.gallery-sample {
   display: grid;
   grid-gap: 2rem;
 }
@@ -11618,7 +11638,7 @@ button::selection {
 }
 
 @media only screen and (min-width: 768px) {
-  .gallery {
+  .gallery-sample {
     grid-template-columns: 1fr 1fr;
     margin: 0 5rem 0 5rem;
   }
@@ -11629,7 +11649,7 @@ button::selection {
 }
 
 @media only screen and (min-width: 1024px) {
-  .gallery {
+  .gallery-sample {
     grid-template-columns: 1fr 1fr 1fr 1fr;
   }
 
@@ -11640,7 +11660,7 @@ button::selection {
 
 /* Galery Open ------------------------------- */
 
-.galeria {
+.gallery-full {
   background: -webkit-gradient(
     linear,
     left top, left bottom,
@@ -11652,12 +11672,15 @@ button::selection {
     rgba(26, 32, 44, 0.8),
     rgba(15, 19, 26, 0.9)
   );
-  padding-left: 5vw;
-  padding-right: 5vw;
+  padding: 2rem 5vw 0 5vw;
 }
 
 .galeria-img img {
   max-height: 70vh;
+  border-width: 1px;
+  border-color: #718096;
+  border-style: solid;
+  border-radius: 0.25rem;
 }
 
 .galeria-texto h1 {
@@ -11671,7 +11694,7 @@ button::selection {
 }
 
 @media only screen and (min-width: 768px) {
-  .btn-fechar-galeria {
+  .btn-close-gallery {
     right: 5vw;
     top: 20vh;
     position: fixed;
@@ -11712,7 +11735,7 @@ button::selection {
 }
 
 @media only screen and (min-width: 1024px) {
-  .btn-fechar-galeria,
+  .btn-close-gallery,
   .linhas {
     top: 10vh;
   }
@@ -11750,7 +11773,7 @@ button::selection {
 
 /* Scroll Magic ------------------------------ */
 
-#titulo-portfolio.fade-in,
+#title-portfolio.fade-in,
 #bg-portfolio.fade-in,
 .btn-sortWork.fade-in,
 #runescape-1.fade-in,
@@ -11762,10 +11785,10 @@ button::selection {
 #folclore-3.fade-in,
 #folclore-4.fade-in,
 #bg-sobre-mim.fade-in,
-#titulo-sobre-mim.fade-in,
-#descricao-sobre-mim.fade-in,
+#title-sobre-mim.fade-in,
+#description-sobre-mim.fade-in,
 #bg-contato.fade-in,
-#titulo-contato.fade-in,
+#title-contato.fade-in,
 #nome.fade-in,
 #email.fade-in,
 #assunto.fade-in,
@@ -11775,14 +11798,14 @@ button::selection {
           transform: translate(0);
 }
 
-#titulo-portfolio,
+#title-portfolio,
 #bg-portfolio,
 .gallery-img-sample,
 #bg-sobre-mim,
-#titulo-sobre-mim,
-#descricao-sobre-mim,
+#title-sobre-mim,
+#description-sobre-mim,
 #bg-contato,
-#titulo-contato,
+#title-contato,
 #nome,
 #email,
 #assunto,

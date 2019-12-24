@@ -9,11 +9,11 @@ $(document).ready(function() {
     .setClassToggle("#bg-contato", "fade-in")
     .addTo(controller);
   let tituloContato = new ScrollMagic.Scene({
-    triggerElement: "#titulo-contato",
+    triggerElement: "#title-contato",
     triggerHook: 0.9,
     reverse: false
   })
-    .setClassToggle("#titulo-contato", "fade-in")
+    .setClassToggle("#title-contato", "fade-in")
     .addTo(controller);
 
   // Form

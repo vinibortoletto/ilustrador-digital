@@ -3,17 +3,17 @@ $(document).ready(function() {
 
   let bgPortfolio = new ScrollMagic.Scene({
     triggerElement: "#bg-portfolio",
-    triggerHook: 0.2,
+    triggerHook: 0.7,
     reverse: false
   })
     .setClassToggle("#bg-portfolio", "fade-in")
     .addTo(controller);
   let tituloPortfolio = new ScrollMagic.Scene({
-    triggerElement: "#titulo-portfolio",
-    triggerHook: 0.4,
+    triggerElement: "#title-portfolio",
+    triggerHook: 0.7,
     reverse: false
   })
-    .setClassToggle("#titulo-portfolio", "fade-in")
+    .setClassToggle("#title-portfolio", "fade-in")
     .addTo(controller);
 
   // Buttons ----------------------------------

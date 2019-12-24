@@ -186,17 +186,19 @@
         <div>
           <!-- Background Image -->
           <div
-            class="w-full h-screen absolute bg-no-repeat bg-cover bg-gray-400"
-            style="background-image: url(/src/images/home/bg-home.jpg);background-position: 70% 0;"
+            class="bg-home w-full h-screen absolute bg-no-repeat bg-cover bg-gray-400"
           ></div>
 
-          <!-- Title -->
-          <div class="h-screen flex justify-center items-center">
-            <div class="relative inline-block leading-none text-gray-100">
-              <h1 class="font-title text-5xl sm:text-6xl mt-10">
-                Vinicius <span class="block">Bortoletto</span>
+          <div
+            class="px-10 pt-10 h-screen relative z-10 flex flex-col justify-center items-center text-gray-100"
+          >
+            <div class="title-home w-64">
+              <h1
+                class="font-title font-bold text-5xl md:text-6xl leading-none"
+              >
+                Vinicius Bortoletto
               </h1>
-              <h2 class="font-hairline text-xl text-right">
+              <h2 class="text-xl md:text-2xl text-right w-full">
                 ilustrador digital
               </h2>
             </div>
@@ -218,7 +220,7 @@
       <!-- Portfolio -->
       <section
         id="portfolio"
-        class="mb-64 flex flex-col"
+        class="mb-40 flex flex-col"
         style="margin-left: 5vw; margin-right: 5vw;"
       >
         <!-- Background Image -->
@@ -232,7 +234,7 @@
 
         <!-- Title -->
         <div
-          id="titulo-portfolio"
+          id="title-portfolio"
           class=" title-box md:-mt-32 lg:-mt-40 md:mb-20 md:m-0"
         >
           <h1 class="title-text">
@@ -258,7 +260,7 @@
         </div>
 
         <!-- Gallery Sample -->
-        <div class="gallery flex flex-wrap justify-center mx-8">
+        <div class="gallery-sample flex flex-wrap justify-center mx-8">
           <!-- Runescape -->
           <div id="runescape-1" class="gallery-img-sample runescape">
             <div class="gallery-img-sample-bg">
@@ -374,13 +376,14 @@
           </div>
         </div>
 
+        <!-- Gallery Full Image -->
         <div
-          id="galeria"
-          class="hidden opacity-0 galeria fixed inset-0 z-20 flex flex-col md:flex-row items-center md:justify-center pt-24 lg:pt-0"
+          id="gallery-full"
+          class="hidden opacity-0 gallery-full fixed inset-0 z-20 flex flex-col md:flex-row items-center md:justify-center lg:pt-0"
         >
           <!-- Close Button -->
-          <div class="btn-fechar-galeria w-full mb-5 flex justify-end">
-            <button id="btn-fechar-galeria">
+          <div class="btn-close-gallery w-full mb-5 flex justify-end">
+            <button id="btn-close-gallery">
               <img
                 class="w-6"
                 src="/src/images/icons/fechar.svg"
@@ -413,7 +416,7 @@
       <!-- Sobre Mim -->
       <section
         id="sobre-mim"
-        class="mb-64 flex flex-col"
+        class="mb-40 flex flex-col"
         style="margin-left: 5vw; margin-right: 5vw"
       >
         <!-- Background Image -->
@@ -430,7 +433,7 @@
 
         <!-- Title -->
         <div
-          id="titulo-sobre-mim"
+          id="title-sobre-mim"
           class="title-box flex flex-col md:mr-0 md:mb-20 text-right md:relative md:z-10"
         >
           <h1 class="title-text">
@@ -440,9 +443,9 @@
           <div class="title-line w-40 self-end"></div>
         </div>
 
-        <!-- Descrição -->
+        <!-- Description -->
         <div
-          id="descricao-sobre-mim"
+          id="description-sobre-mim"
           class="text-justify md:relative md:z-10 md:w-3/5 self-end"
           style="text-indent: 1rem;"
         >
@@ -483,7 +486,7 @@
 
         <!-- Title -->
         <div
-          id="titulo-contato"
+          id="title-contato"
           class="title-box flex flex-col  md:mb-20 text-center md:relative md:z-10"
         >
           <h1 class="title-text title-text-contato">
@@ -577,8 +580,7 @@
     <script src="/src/js/validaForm.js"></script>
 
     <!-- Portfolio Gallery -->
-    <script src="/src/js/galeria/fecharGaleria.js"></script>
-    <script src="/src/js/galeria/abrirGaleria.js"></script>
+    <script src="/src/js/galeria/abreFechaGaleria.js"></script>
     <script src="/src/js/galeria/conteudoRunescape.js"></script>
     <script src="/src/js/galeria/conteudoFolclore.js"></script>
     <script src="/src/js/galeria/conteudoGaleria.js"></script>
@@ -588,7 +590,6 @@
     <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script>
 
-    <!-- <script src="/src/js/scrollMagic/home.js"></script> -->
     <script src="/src/js/scrollMagic/portfolio.js"></script>
     <script src="/src/js/scrollMagic/sobre.js"></script>
     <script src="/src/js/scrollMagic/contato.js"></script>
