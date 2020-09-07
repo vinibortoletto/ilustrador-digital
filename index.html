@@ -1,17 +1,17 @@
 <!DOCTYPE html>
-<html lang="en" style="scroll-behavior: smooth;">
+<html lang="en" style="scroll-behavior: smooth">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
 
-    <link rel="icon" href="/public/build/favicon.ico" type="image/x-icon" />
+    <link rel="icon" href="./public/build/favicon.ico" type="image/x-icon" />
 
     <link
       href="https://fonts.googleapis.com/css?family=Belgrano|Quicksand:300,400,700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="/public/build/tailwind.css" />
+    <link rel="stylesheet" href="./public/build/tailwind.css" />
 
     <title>Vinicius Bortoletto | Ilustrador</title>
   </head>
@@ -27,13 +27,13 @@
       <nav
         id="navbar-mobile"
         class="lg:hidden w-full h-20 fixed z-50 flex justify-between items-center px-5 bg-gray-900"
-        style="box-shadow: 0 3px 5px rgba(0,0,0,0.5);"
+        style="box-shadow: 0 3px 5px rgba(0, 0, 0, 0.5)"
       >
         <!-- Logo -->
         <a href="#">
           <div>
             <img
-              src="/src/images/icons/logo.svg"
+              src="./src/images/icons/logo.svg"
               alt="logo de vinicius bortoletto"
             />
           </div>
@@ -52,13 +52,13 @@
         <div
           id="menu-mobile"
           class="menu-mobile fixed inset-0 w-64 h-screen bg-gray-900"
-          style="top: 5rem; box-shadow: inset 0 3px 5px rgba(0,0,0,0.2);"
+          style="top: 5rem; box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.2)"
         >
           <ul class="pt-10 px-5 text-xl text-gray-100 font-bold">
             <li class="flex mb-5">
               <img
                 class="w-6 mr-5"
-                src="/src/images/icons/home.svg"
+                src="./src/images/icons/home.svg"
                 alt="ícone da home"
               />
               <a href="#">home</a>
@@ -66,7 +66,7 @@
             <li class="flex mb-5">
               <img
                 class="w-6 mr-5"
-                src="/src/images/icons/portfolio.svg"
+                src="./src/images/icons/portfolio.svg"
                 alt="ícone do portfolio"
               />
               <a href="#portfolio">portfolio</a>
@@ -74,7 +74,7 @@
             <li class="flex mb-5">
               <img
                 class="w-6 mr-5"
-                src="/src/images/icons/sobre.svg"
+                src="./src/images/icons/sobre.svg"
                 alt="ícone de sobre"
               />
               <a href="#sobre-mim">sobre</a>
@@ -82,7 +82,7 @@
             <li class="flex">
               <img
                 class="w-6 mr-5"
-                src="/src/images/icons/contato.svg"
+                src="./src/images/icons/contato.svg"
                 alt="ícone de contato"
               />
               <a href="#contato">contato</a>
@@ -95,12 +95,15 @@
       <nav
         id="navbar-desktop"
         class="hidden lg:flex w-20 h-screen fixed inset-0 z-50 flex-col items-center p-5"
-        style="box-shadow: 3px 0 5px rgba(0,0,0,0.5); background: linear-gradient(to bottom,#12161f,  #1A202C);"
+        style="
+          box-shadow: 3px 0 5px rgba(0, 0, 0, 0.5);
+          background: linear-gradient(to bottom, #12161f, #1a202c);
+        "
       >
         <!-- Logo -->
         <div>
           <img
-            src="/src/images/icons/logo.svg"
+            src="./src/images/icons/logo.svg"
             alt="logo de vinicius bortoletto"
           />
         </div>
@@ -109,7 +112,7 @@
         <div
           id="menu-desktop"
           class="menu-desktop w-20 absolute top-0 left-0"
-          style="margin-top: 50vh; transform: translateY(-50%);"
+          style="margin-top: 50vh; transform: translateY(-50%)"
         >
           <ul
             class="flex flex-col items-center text-xl text-gray-100 font-bold"
@@ -120,7 +123,7 @@
               >
                 <img
                   class="w-6"
-                  src="/src/images/icons/home.svg"
+                  src="./src/images/icons/home.svg"
                   alt="ícone da home"
                 />
                 <span
@@ -136,7 +139,7 @@
               >
                 <img
                   class="w-6"
-                  src="/src/images/icons/portfolio.svg"
+                  src="./src/images/icons/portfolio.svg"
                   alt="ícone do portfolio"
                 />
                 <span
@@ -152,7 +155,7 @@
               >
                 <img
                   class="w-6"
-                  src="/src/images/icons/sobre.svg"
+                  src="./src/images/icons/sobre.svg"
                   alt="ícone de sobre"
                 />
                 <span
@@ -166,7 +169,7 @@
               <li class="flex items-center cursor-pointer hover:text-teal-600">
                 <img
                   class="w-6"
-                  src="/src/images/icons/contato.svg"
+                  src="./src/images/icons/contato.svg"
                   alt="ícone de contato"
                 />
                 <span
@@ -210,7 +213,7 @@
           >
             <img
               class="w-full max-w-md self-center mt-16"
-              src="/src/images/home/dots.png"
+              src="./src/images/home/dots.png"
               alt="pontilhado"
             />
           </div>
@@ -221,12 +224,12 @@
       <section
         id="portfolio"
         class="mb-40 flex flex-col"
-        style="margin-left: 5vw; margin-right: 5vw;"
+        style="margin-left: 5vw; margin-right: 5vw"
       >
         <!-- Background Image -->
         <div id="bg-portfolio" class="section-bgImg-box sm:justify-end">
           <img
-            src="/src/images/svgs/bg-portfolio.svg"
+            src="./src/images/svgs/bg-portfolio.svg"
             alt="pessoa observando obras de arte"
             class="w-full sm:4/5 max-w-xl"
           />
@@ -235,11 +238,9 @@
         <!-- Title -->
         <div
           id="title-portfolio"
-          class=" title-box md:-mt-32 lg:-mt-40 md:mb-20 md:m-0"
+          class="title-box md:-mt-32 lg:-mt-40 md:mb-20 md:m-0"
         >
-          <h1 class="title-text">
-            portfolio
-          </h1>
+          <h1 class="title-text">portfolio</h1>
           <div class="title-line w-56"></div>
           <div class="title-line w-40"></div>
         </div>
@@ -254,9 +255,7 @@
           <button id="btn-runescape" class="btn-sortWork md:mr-4">
             série runescape
           </button>
-          <button id="btn-folclore" class="btn-sortWork">
-            série folclore
-          </button>
+          <button id="btn-folclore" class="btn-sortWork">série folclore</button>
         </div>
 
         <!-- Gallery Sample -->
@@ -266,12 +265,12 @@
             <div class="gallery-img-sample-bg">
               <img
                 class="w-8"
-                src="/src/images/icons/zoom.svg"
+                src="./src/images/icons/zoom.svg"
                 alt="ícone de ampliação"
               />
             </div>
             <img
-              src="/src/images/portfolio/serie-runescape/runescape-1-sm.jpg"
+              src="./src/images/portfolio/serie-runescape/runescape-1-sm.jpg"
               alt="lenhador carregando um tronco de árvore, caminhando pela floresta"
             />
           </div>
@@ -280,12 +279,12 @@
             <div class="gallery-img-sample-bg">
               <img
                 class="w-8"
-                src="/src/images/icons/zoom.svg"
+                src="./src/images/icons/zoom.svg"
                 alt="ícone de ampliação"
               />
             </div>
             <img
-              src="/src/images/portfolio/serie-runescape/runescape-2-sm.jpg"
+              src="./src/images/portfolio/serie-runescape/runescape-2-sm.jpg"
               alt="pescador pescando em um lago"
             />
           </div>
@@ -294,12 +293,12 @@
             <div class="gallery-img-sample-bg">
               <img
                 class="w-8"
-                src="/src/images/icons/zoom.svg"
+                src="./src/images/icons/zoom.svg"
                 alt="ícone de ampliação"
               />
             </div>
             <img
-              src="/src/images/portfolio/serie-runescape/runescape-3-sm.jpg"
+              src="./src/images/portfolio/serie-runescape/runescape-3-sm.jpg"
               alt="cavaleiro sentado sob a sombra de uma árvore"
             />
           </div>
@@ -308,12 +307,12 @@
             <div class="gallery-img-sample-bg">
               <img
                 class="w-8"
-                src="/src/images/icons/zoom.svg"
+                src="./src/images/icons/zoom.svg"
                 alt="ícone de ampliação"
               />
             </div>
             <img
-              src="/src/images/portfolio/serie-runescape/runescape-4-sm.jpg"
+              src="./src/images/portfolio/serie-runescape/runescape-4-sm.jpg"
               alt="ferreiro segurando um grande martelo"
             />
           </div>
@@ -323,12 +322,12 @@
             <div class="gallery-img-sample-bg">
               <img
                 class="w-8"
-                src="/src/images/icons/zoom.svg"
+                src="./src/images/icons/zoom.svg"
                 alt="ícone de ampliação"
               />
             </div>
             <img
-              src="/src/images/portfolio/serie-folclore/folclore-1-sm.jpg"
+              src="./src/images/portfolio/serie-folclore/folclore-1-sm.jpg"
               alt="criatura gigante de uma perna só segurnado um cachimbo"
             />
           </div>
@@ -337,12 +336,12 @@
             <div class="gallery-img-sample-bg">
               <img
                 class="w-8"
-                src="/src/images/icons/zoom.svg"
+                src="./src/images/icons/zoom.svg"
                 alt="ícone de ampliação"
               />
             </div>
             <img
-              src="/src/images/portfolio/serie-folclore/folclore-2-sm.jpg"
+              src="./src/images/portfolio/serie-folclore/folclore-2-sm.jpg"
               alt="sereia gigante, encantando pescadores"
             />
           </div>
@@ -351,12 +350,12 @@
             <div class="gallery-img-sample-bg">
               <img
                 class="w-8"
-                src="/src/images/icons/zoom.svg"
+                src="./src/images/icons/zoom.svg"
                 alt="ícone de ampliação"
               />
             </div>
             <img
-              src="/src/images/portfolio/serie-folclore/folclore-3-sm.jpg"
+              src="./src/images/portfolio/serie-folclore/folclore-3-sm.jpg"
               alt="serpente gigante em chamas"
             />
           </div>
@@ -365,12 +364,12 @@
             <div class="gallery-img-sample-bg">
               <img
                 class="w-8"
-                src="/src/images/icons/zoom.svg"
+                src="./src/images/icons/zoom.svg"
                 alt="ícone de ampliação"
               />
             </div>
             <img
-              src="/src/images/portfolio/serie-folclore/folclore-4-sm.jpg"
+              src="./src/images/portfolio/serie-folclore/folclore-4-sm.jpg"
               alt="mulher com oito braços, segurando uma esféra brilhante"
             />
           </div>
@@ -386,7 +385,7 @@
             <button id="btn-close-gallery">
               <img
                 class="w-6"
-                src="/src/images/icons/fechar.svg"
+                src="./src/images/icons/fechar.svg"
                 alt="ícone de fechar"
               />
             </button>
@@ -405,9 +404,9 @@
 
           <div class="linhas hidden md:block fixed">
             <img
-              src="/src/images/portfolio/linhas.png"
+              src="./src/images/portfolio/linhas.png"
               alt="linhas"
-              style="height: 80vh;"
+              style="height: 80vh"
             />
           </div>
         </div>
@@ -425,7 +424,7 @@
           class="section-bgImg-box md:absolute md:justify-start"
         >
           <img
-            src="/src/images/svgs/bg-sobre.svg"
+            src="./src/images/svgs/bg-sobre.svg"
             alt="rosto de uma pessoa"
             class="w-full max-w-sm"
           />
@@ -436,9 +435,7 @@
           id="title-sobre-mim"
           class="title-box flex flex-col md:mr-0 md:mb-20 text-right md:relative md:z-10"
         >
-          <h1 class="title-text">
-            sobre mim
-          </h1>
+          <h1 class="title-text">sobre mim</h1>
           <div class="title-line w-56 self-end"></div>
           <div class="title-line w-40 self-end"></div>
         </div>
@@ -447,7 +444,7 @@
         <div
           id="description-sobre-mim"
           class="text-justify md:relative md:z-10 md:w-3/5 self-end"
-          style="text-indent: 1rem;"
+          style="text-indent: 1rem"
         >
           <p class="mb-5">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur
@@ -478,7 +475,7 @@
         <!-- Background Image -->
         <div id="bg-contato" class="section-bgImg-box">
           <img
-            src="/src/images/svgs/bg-contato.svg"
+            src="./src/images/svgs/bg-contato.svg"
             alt="pessoa observando obras de arte"
             class="w-full sm:4/5 max-w-3xl"
           />
@@ -487,11 +484,9 @@
         <!-- Title -->
         <div
           id="title-contato"
-          class="title-box flex flex-col  md:mb-20 text-center md:relative md:z-10"
+          class="title-box flex flex-col md:mb-20 text-center md:relative md:z-10"
         >
-          <h1 class="title-text title-text-contato">
-            entre em contato
-          </h1>
+          <h1 class="title-text title-text-contato">entre em contato</h1>
           <div class="title-line w-56 self-center mr-10"></div>
           <div class="title-line w-56 self-center ml-10"></div>
         </div>
@@ -575,23 +570,23 @@
       </p>
     </footer>
 
-    <script src="/src/js/toggleMenu.js"></script>
-    <script src="/src/js/sortWork.js"></script>
-    <script src="/src/js/validaForm.js"></script>
+    <script src="./src/js/toggleMenu.js"></script>
+    <script src="./src/js/sortWork.js"></script>
+    <script src="./src/js/validaForm.js"></script>
 
     <!-- Portfolio Gallery -->
-    <script src="/src/js/galeria/abreFechaGaleria.js"></script>
-    <script src="/src/js/galeria/conteudoRunescape.js"></script>
-    <script src="/src/js/galeria/conteudoFolclore.js"></script>
-    <script src="/src/js/galeria/conteudoGaleria.js"></script>
+    <script src="./src/js/galeria/abreFechaGaleria.js"></script>
+    <script src="./src/js/galeria/conteudoRunescape.js"></script>
+    <script src="./src/js/galeria/conteudoFolclore.js"></script>
+    <script src="./src/js/galeria/conteudoGaleria.js"></script>
 
     <!-- Scroll Magic -->
-    <script src="/src/js/jquery.js"></script>
+    <script src="./src/js/jquery.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script>
 
-    <script src="/src/js/scrollMagic/portfolio.js"></script>
-    <script src="/src/js/scrollMagic/sobre.js"></script>
-    <script src="/src/js/scrollMagic/contato.js"></script>
+    <script src="./src/js/scrollMagic/portfolio.js"></script>
+    <script src="./src/js/scrollMagic/sobre.js"></script>
+    <script src="./src/js/scrollMagic/contato.js"></script>
   </body>
 </html>
