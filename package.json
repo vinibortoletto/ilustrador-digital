@@ -1,9 +1,11 @@
 {
+  "homepage": "https://vinibortoletto.github.io/ilustrador-digital",
   "name": "illustration-portfolio",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
+    "deploy": "npm run build && gh-pages -d build",
     "build": "postcss src/css/tailwind.css -o public/build/tailwind.css",
     "watch": "postcss src/css/tailwind.css -o public/build/tailwind.css --watch"
   },
@@ -17,10 +19,12 @@
   "bugs": {
     "url": "https://github.com/ViniBortoletto/illustration-portfolio/issues"
   },
-  "homepage": "https://github.com/ViniBortoletto/illustration-portfolio#readme",
   "dependencies": {
     "autoprefixer": "^9.7.3",
     "postcss-cli": "^6.1.3",
     "tailwindcss": "^1.1.4"
+  },
+  "devDependencies": {
+    "gh-pages": "^3.1.0"
   }
 }
