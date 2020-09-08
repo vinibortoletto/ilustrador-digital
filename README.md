@@ -41,7 +41,7 @@ $ git clone https://github.com/vinibortoletto/ilustrador-digital.git
 $ code ilustrador-digital
 
 # In VS Code
-$ alt + o
+$ alt + l, alt + o
 
 ```
 
