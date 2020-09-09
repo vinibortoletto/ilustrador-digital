@@ -40,7 +40,7 @@ $ git clone https://github.com/vinibortoletto/ilustrador-digital.git
 # Open in VS Code
 $ code ilustrador-digital
 
-# In VS Code
+# Start application
 $ alt + l, alt + o
 
 ```
